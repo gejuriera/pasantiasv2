@@ -8,6 +8,9 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 
 import CreateUserScreen from "./screens/CreateUserScreen";
+
+import Perfil from "./screens/Perfil";
+import MetodoDePago from "./screens/MetodoDePago"
 import Login from "./screens/Login";
 import Logo from "./screens/Logo";
 import UserDetailScreen from "./screens/UserDetailScreen";
@@ -34,6 +37,12 @@ function MyStack() {
       <Stack.Screen name="Logo" component={Logo}
         options={{ title: "" }}
       />
+      <Stack.Screen name="MetodoDePago" component={MetodoDePago}
+        options={{ title: "Metodos de pago" }}
+      />
+       <Stack.Screen name="Perfil" component={Perfil}
+        options={{ title: "" }}
+      />
       <Stack.Screen name="CreateUserScreen" component={CreateUserScreen}
         options={{ title: "Registrarse" }}
       />
@@ -41,7 +50,7 @@ function MyStack() {
         options={{ title: "Iniciar Sesion" }}
       />
        <Stack.Screen name="DetallesReserva" component={DetallesReserva}
-        options={{ title: "Check-out" }}
+        options={{ title: "Detalles de la Reserva" }}
       />
       
       

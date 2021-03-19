@@ -82,7 +82,7 @@ const Login=(props)=>{
                     borderRadius:23
                 }}>
                     <Text
-                    onPress={() => (props.navigation.navigate('DetallesReserva'))}
+                    onPress={() => (props.navigation.navigate('Perfil'))}
                     style={{
                         color:"white",
                         

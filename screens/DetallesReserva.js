@@ -2,10 +2,9 @@ import React from 'react';
 import { Text, View, Image, TextInput } from 'react-native';
 import image from '../assets/habitacion.jpg'
 
-export default class DetallesReserva extends React.Component {
+const DetallesReserva = (props) => {
 
-    render() {
-        const { navigate } = this.props.navigation
+    
         return (
             <View style={{ backgroundColor: "#fff", height: "100%" }}>
 
@@ -74,7 +73,7 @@ export default class DetallesReserva extends React.Component {
                         paddingHorizontal:55,
                         color:"white",
                         
-                    }}>Reservar</Text>
+                    }}>Imprimir</Text>
                 </View>
 
                 </View>
@@ -93,4 +92,4 @@ export default class DetallesReserva extends React.Component {
 
     }
 
-}
+export default DetallesReserva
