@@ -8,6 +8,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 
 import CreateUserScreen from "./screens/CreateUserScreen";
+import Login from "./screens/Login";
 import UserDetailScreen from "./screens/UserDetailScreen";
 import UsersList from "./screens/UsersList";
 
@@ -31,6 +32,9 @@ function MyStack() {
       
       <Stack.Screen name="CreateUserScreen" component={CreateUserScreen}
         options={{ title: "Registrarse" }}
+      />
+      <Stack.Screen name="Login" component={Login}
+        options={{ title: "Iniciar Sesion" }}
       />
       
       <Stack.Screen name="UsersList"component={UsersList}

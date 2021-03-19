@@ -29,7 +29,7 @@ const CreateUserScreen =(props) => {
                     phone: state.phone,
                     city: state.city
                 })
-                props.navigation.navigate('UsersList');
+                props.navigation.navigate('Login');
             }catch (error) {
                 console.log(error);
             }
