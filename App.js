@@ -9,6 +9,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import CreateUserScreen from "./screens/CreateUserScreen";
 import Login from "./screens/Login";
+import Logo from "./screens/Logo";
 import UserDetailScreen from "./screens/UserDetailScreen";
 import UsersList from "./screens/UsersList";
 
@@ -19,7 +20,7 @@ function MyStack() {
     <Stack.Navigator
       screenOptions={{
         headerStyle: {
-          backgroundColor: "#621FF7",
+          backgroundColor: "#1a6199",
           
           
         },
@@ -29,7 +30,9 @@ function MyStack() {
         },
       }}
     >
-      
+      <Stack.Screen name="Logo" component={Logo}
+        options={{ title: "" }}
+      />
       <Stack.Screen name="CreateUserScreen" component={CreateUserScreen}
         options={{ title: "Registrarse" }}
       />

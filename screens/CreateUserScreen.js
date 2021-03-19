@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {View,Button,TextInput,ScrollView,StyleSheet} from 'react-native'
+import {View,Button,TextInput,ScrollView,StyleSheet,Text} from 'react-native'
 import { color } from 'react-native-reanimated'
 import firebase from '../database/firebase'
 
@@ -63,9 +63,27 @@ const CreateUserScreen =(props) => {
 
             
 
-            <View style={styles.inputGroup}>
-                <Button tittle=" Save user " onPress={() => saveNewUser()} />
-            </View>
+           
+
+            <View style={{
+                    marginHorizontal:55,
+                    alignItems:"center",
+                    justifyContent:"center",
+                    marginTop:30,
+                    backgroundColor:"#1a6199",
+                    paddingVertical:10,
+                    borderRadius:23
+                }}>
+                    <Text 
+                    onPress={() => saveNewUser()}
+                    
+                    style={{
+                        color:"white",
+                        
+                    }}>Loguearse</Text>
+                </View>
+
+           
         </ScrollView>
 
     )
