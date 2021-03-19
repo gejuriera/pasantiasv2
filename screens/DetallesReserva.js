@@ -6,6 +6,7 @@ const DetallesReserva = (props) => {
 
     
         return (
+            
             <View style={{ backgroundColor: "#fff", height: "100%" }}>
 
 

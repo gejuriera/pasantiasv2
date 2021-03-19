@@ -26,14 +26,14 @@ export default function Perfil (){
                 />
 
                 <Tab.Screen
-                    name="Pagos"
+                    name="Metodos de Pago"
                     component={MetodoDePago}
                     
 
                 />
 
                 <Tab.Screen
-                    options={{ title: "Metodos de pago" }}
+                    options={{ title: "Detalles reserva" }}
                     name="Reservas"
                     component={DetallesReserva}
 

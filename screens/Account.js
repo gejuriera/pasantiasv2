@@ -3,8 +3,8 @@ import {StyleSheet, View,Text} from 'react-native'
 
 export default function Account (){
     return(
-        <View>
-            <Text>account</Text>
+        <View  style={{ backgroundColor: "#fff", height: "100%" }}>
+            
         </View>
     )
 }
