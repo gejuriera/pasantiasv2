@@ -71,7 +71,7 @@ const Logo = (props) => {
 const styles = StyleSheet.create({
     container: { flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: "white" },
     title: { fontSize: 30 },
-    image: { height: 400, width: 400,alignItems:"center" },
+    image: { height: 400, width: 400,alignSelf:"center" },
     button: { backgroundColor: '#1a6199', padding: 7, marginTop: 10 },
     buttonText: {
         color: "#fff", fontSize: 20

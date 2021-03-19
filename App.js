@@ -12,6 +12,7 @@ import Login from "./screens/Login";
 import Logo from "./screens/Logo";
 import UserDetailScreen from "./screens/UserDetailScreen";
 import UsersList from "./screens/UsersList";
+import DetallesReserva from "./screens/DetallesReserva";
 
 const Stack = createStackNavigator();
 
@@ -39,6 +40,10 @@ function MyStack() {
       <Stack.Screen name="Login" component={Login}
         options={{ title: "Iniciar Sesion" }}
       />
+       <Stack.Screen name="DetallesReserva" component={DetallesReserva}
+        options={{ title: "Check-out" }}
+      />
+      
       
       <Stack.Screen name="UsersList"component={UsersList}
         options={{ title: "Users List" }}

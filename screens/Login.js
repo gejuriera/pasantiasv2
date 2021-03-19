@@ -3,16 +3,16 @@ import {Text,View,Image, TextInput} from 'react-native';
 import Icon from '@expo/vector-icons/AntDesign';
 import image from '../assets/favicon.png'
 
-export default class Login extends React.Component{
+const Login=(props)=>{
 
-    render(){
-        const {navigate} = this.props.navigation
+    
+        
         return(
             <View style={{backgroundColor:"#FFF",height:"100%"}}>
                 
                 
                  <Image
-                 style={ { height: 400, width: 400,alignItems:"center" }}
+                 style={ { height: 400, width: 400,alignSelf:"center" }}
                 source={{
                     uri: image
 
@@ -72,7 +72,7 @@ export default class Login extends React.Component{
 
                 </View>
 
-                <View style={{
+                 <View style={{
                     marginHorizontal:55,
                     alignItems:"center",
                     justifyContent:"center",
@@ -81,10 +81,12 @@ export default class Login extends React.Component{
                     paddingVertical:10,
                     borderRadius:23
                 }}>
-                    <Text style={{
+                    <Text
+                    onPress={() => (props.navigation.navigate('DetallesReserva'))}
+                    style={{
                         color:"white",
                         
-                    }}>Loguearse</Text>
+                    }}>Iniciar Sesion</Text>
                 </View>
                 
             </View>
@@ -95,4 +97,4 @@ export default class Login extends React.Component{
 
     }
 
-}
+    export default Login
