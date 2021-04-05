@@ -60,22 +60,7 @@ const DetallesReserva = (props) => {
                         <TextInput placeholder="Total a pagar: 112" />
                     </View>
 
-                    <View style={{
-                    marginHorizontal:55,
-                    alignItems:"center",
-                    justifyContent:"center",
-                    marginTop:30,
-                    backgroundColor:"#1a6199",
-                    paddingVertical:10,
-                    borderRadius:23
-                }}>
-                    <Text style={{
-                        flex:1,
-                        paddingHorizontal:55,
-                        color:"white",
-                        
-                    }}>Imprimir</Text>
-                </View>
+                    
 
                 </View>
 
